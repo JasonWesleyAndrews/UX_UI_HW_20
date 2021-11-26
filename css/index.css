@@ -20,7 +20,7 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
+    
     font-family: Arial, sans-serif, Spartan;
     color: #373738 
 }
@@ -30,7 +30,7 @@ section {
 }
 .styledHR {
     background-color: #37919B;
-    width: 150px;
+    width: 50%;
     height: 4px;
     border: none;
     border-radius: 4px;
@@ -126,11 +126,16 @@ h2:hover {
 
 h3 {
     font-size: 22px !important;
+    margin-top: 40px;
 }
 h4 {
     font-size: 30px;
     white-space: nowrap;
     font-weight: 100; 
+}
+h5 {
+    font-size: 18px;
+    margin: 20px 0px 10px 0px;
 }
 .heading {
     display: flex;
@@ -145,7 +150,7 @@ li {
     justify-content: center;
 }
 .caseStudy p {
-    font-size: 14px;
+    font-size: 14px;  
 }
 /* home page styles */
 .homeText {
@@ -267,6 +272,30 @@ div .skills{
     text-align: center;
 }
 /* case study styles */
+.caseStudyDoubleImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.caseStudyStackedImgContainer {
+     display: flex;
+     flex-direction: column;
+     width: 49%;
+     
+}
+.caseStudyThreeImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ThreeImgContainer {
+    width: 49%;
+}
+
+.caseStudyDoubleImg {
+    width: 49%;
+}
 .caseStudyBody {
     width: 80%;
     margin: 20px 0px 20px 0px;
@@ -281,6 +310,10 @@ div .skills{
     height: 80px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px #CECECE;
+    
+}
+html {
+	scroll-behavior: smooth;
 }
 .caseStudyLargeImg {
   width: 100%;
@@ -289,7 +322,7 @@ div .skills{
   border-width: 1px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px #CECECE;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .caseStudySmallImg {
     width: 100%;
@@ -298,22 +331,24 @@ div .skills{
     border-width: 1px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px #CECECE;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .caseStudySmallImgNoBorder {
     width: 100%;
     margin-bottom: 20px;
 }
+
 .blockQuoteContainer {
     display: flex;
     justify-content: flex-end;
     color: #9B9A9A;
+    
 }
 .blockquote {
     font-size: 20px ;
-    font-weight: 200;
+    font-weight: 100;
     max-width: 66%;  
-    padding: 20px 0px 30px 0px; 
+    padding: 20px 0px 20px 0px; 
     
 }
 .textLink {
@@ -428,5 +463,9 @@ footer ul {
     }
     .skills {
         width: 90%;
+    }
+    .caseStudyBody {
+        width: 90%;
+        
     }
 }
