@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Jason Andrews - Product Designer</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="css/index.css" rel="stylesheet" type="text/css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   </head>  
+   <body>
+       <!-- header -->
+    <header>
+         <div>
+           <h2><a href="index.html">Jason Andrews</a></h2>
+         </div>
+         <nav>
+             <ul class="mainNav">
+                <li class="navCollapse"><a href="index.html">Home</a></li>
+                <li class="navCollapse"><a href="aboutMe.html">About</a></li>
+                <li class="navCollapse"><a href="documents/Resume_Jason_Andrews_short4.pdf">Resume</a></li>
+                <li id="mobileNav" class="mobileNav">Menu</li>
+                <li class="contactButton">Contact</li>
+             </ul>
+           </nav>
+    </header>
+   
+    <ul class="subNav">
+      <li class="subNavItem"><a href="index.html">Home</a></li>
+      <hr>
+      <li class="subNavItem"><a href="aboutMe.html">About</a></li>
+      <hr>
+      <li class="subNavItem"><a href="documents/Resume_Jason_Andrews_short4.pdf">Resume</a></li>      
+    </ul>
+<div id="grayBG" class="grayBG"></div>
+     <!-- case study -->
+<section>
+    <div class="caseStudyBody">
+    <p class="textLink">My Work</p>
+    <div class="heading">
+      <h1>Energy.gov Redesign</h1>
+      <h3>Responsive Web Design Case Study</h3>
+      <p>UX/UI Designer</p>
+  </div>
+
+    <div class="">
+      <img src="energyGovImages/energyGov_hi-fi_mockups.png" class="caseStudySmallImgNoBorder">
+   </div>
+    <h3>The Problem</h3>
+    <p>The information on Energy.gov is poorly laid out, it’s hard to understand the purpose of the site and how to navigate it.</p>
+    <h3>The Solution</h3>
+    <p>Redesign the website and make it easy to use on all devices. I spent four weeks creating a website experience that is more understandable and accessible.</p>
+    <h3>The User</h3>
+    <p>Homeowners who are concerned about their budget, adults looking to save money on their electricity bill while reducing their carbon footprint.</p>
+    <h3>The Goal</h3>
+    <p>To find the opportunities for improvement and ideate on a solution. Then use prototyping and usability testing to uncover data-driven ways to improve the user flows and UX on desktop, tablet and mobile devices.</p>
+    
+   
+    <h3>The Process</h3>
+     <div class="designIcons">
+      <a href="#empathizeBB"><img src="images/designIcons/empathize_icon.png" class="designIcon"></a>
+      <a href="#defineBB"><img src="images/designIcons/define_icon.png" class="designIcon"></a>
+      <a href="#ideationBB"><img src="images/designIcons/ideate_icon.png" class="designIcon"></a>
+      <a href="#prototypingBB"><img src="images/designIcons/prototype_icon.png" class="designIcon"></a>
+      <a href="#testingBB"><img src="images/designIcons/test_icon.png" class="designIcon"></a>
+     </div>
+     <h3 id="empathizeBB">Empathize / User Research</h3>
+     <p>I created this proto-persona based on my assumptions of the kind of person who would have the desire and means to make their home more energy efficient.</p>
+     <div>
+        <img src="energyGovImages/Energy.gov-proto-persona (2).png" class="caseStudyLargeImg">
+     </div>
+     <p> I redlined three user paths that I thought my proto-persona might take:</p>
+       <ul>
+       <li>Researching tax incentives for making her home more energy efficient.</li>
+       <li>Finding information on how to “go solar.”</li>
+       <li>Finding DIY instructions on how to insulate her water heater tank.</li>
+    </ul>
+     <div>
+        <div class="caseStudyDoubleImgContainer">
+           <div class="caseStudyDoubleImg"> 
+             <img src="energyGovImages/energyGov.redlining.png" class="caseStudySmallImg">
+           </div>
+           <div class="caseStudyDoubleImg"> 
+             <img src="energyGovImages/energyGov.heuristic.png" class="caseStudySmallImg">
+           </div>
+        </div>
+      </div>
+      <p>I completed a 42 point heuristic evaluation on the current site and the majority of my findings showed that the navigation was overly complicated.
+        I also analyzed the color contrast on the page, and found accessibility issues with the Home link and some headings that had blown out pictures behind them.
+        I conducted usability testing with 5 users, on three user paths. I discovered that almost everyone was confused by the navigation of this website. Most of the usability problems that I discovered had to do with navigation and the naming of menus/links. I prioritized the findings on a 2x2 matrix, the top priority items were:</p> 
+        <ul>
+         <li>Incorrect naming.</li>
+         <li>Link names don't match page names.</li>
+         <li>Inconsistent navigation behavior.</li>
+        </ul>
+    <div>
+        <img src="energyGovImages/energyGov.2x2matrix.png" class="caseStudyLargeImg">
+     </div>
+     <h3 id="defineBB">Define</h3>
+    <p>I took screenshots of the current navigation and annotated the areas that I would like to change in the redesign. The Office Of Energy Saver portion of this site had 36 navigation links spread over 4 different menus.
+        Using Miro, I sorted them into 12 categories that can be used as links in the secondary navigation. This will keep users from getting lost in this section of the site. I created a sitemap using the results from my card sorting. 
+        I alphabetically sorted menu items and displayed Header and footer links for the entire Energy Saver portion of the site.
+        </p>
+    
+        <div class="caseStudyDoubleImgContainer">
+                  
+            <div class="caseStudyDoubleImg">
+              <img src="energyGovImages/energyGov.cardSort.png" class="caseStudySmallImg">
+            </div>
+
+            <div class="caseStudyDoubleImg">
+              <img src="energyGovImages/Energy.gov_sitemap.png" class="caseStudySmallImg">
+            </div>
+
+          </div>
+   
+        <h3 id="ideationBB">Ideation</h3>
+        <p>Using the results of my card sorting, I created a navigation prototype in Figma for the Energy Saver portion of Energy.gov.
+            I added a menu for this portion of the site, as well as hover states on the menu items. I created a header and footer for the Energy Saver portion of Energy.gov based on my card sorting. The only change here is that “About Us” has been moved from the secondary menu to the header. On mobile, the header menu items are inside of a hamburger menu. I built wireframes of the Home page, showing primary and secondary navigation for both desktop and mobile.</p>
+     <p>I created a style tile with a color palette, logo, iconography, images, button states, typography and more. I will use this as a starting point to transform my wireframes into a more hi-fi mockup.</p>
+     <div>
+        <img src="energyGovImages/Energy.gov_styleTile2.png" class="caseStudyLargeImg">
+     </div>
+        <h3 id="prototypingBB">Prototyping</h3>
+        <p>I made a wireframe prototype of the Home page, with primary and secondary navigation as well as the DIY Projects page so that I could do some usability testing on the new navigation.</p>
+      
+        <img src="energyGovImages/energyGov_desktop_secondary_wireframe.png" class="caseStudyLargeImg">
+        
+         
+          
+
+
+
+            <h3 id="testingBB">Usability Testing</h3>
+            <p>I conducted 4, usability tests and took notes. These were my findings:</p>
+            <ul>
+                <li>The new navigation is much easier to use. 100% success!</li>
+                <li>The text on cards should be under pictures for better readability.</li>
+            </ul>
+            
+            
+                <p>Based on the results of my usability tests, I iterated on the wireframes and created a tablet version as well as desktop and mobile.</p>
+                <img src="energyGovImages/BB_RWD_wireframes2.png" class="caseStudySmallImgNoBorder">
+                <p>I conducted 4 usability tests of my prototypes through zoom. 100% of participants were able to easily complete the task. When testing the original site, the same task was only able to be completed by 20% of users. My usability tests gave me some insights which inspired these changes:</p>
+                <ul>
+                    <li>H1 color changed from blue to black.</li>
+                    <li> More padding between cards.</li>
+                    <li>Made whole card clickable instead of just the button.</li>
+                    <li> Made carrots smaller in navigation.</li>
+                </ul>
+                <div>
+                    <img src="energyGovImages/energyGov.desktop_prototype_test_vsmall.gif" class="caseStudyLargeImg">
+                 </div>
+
+                
+                <p>I created a style guide with 23 categories, explaining all of the elements used to make the high-fidelity mockup for this redesign.</p>
+                <div class="caseStudyDoubleImgContainer">
+                  
+                    <div class="caseStudyDoubleImg">
+                      <img src="energyGovImages/energyGov.styleGuide1.png" class="caseStudySmallImg">
+                    </div>
+  
+                    <div class="caseStudyDoubleImg">
+                      <img src="energyGovImages/energyGov.styleGuide2.png" class="caseStudySmallImg">
+                    </div>
+  
+                  </div>
+                 <p>I applied the styles from my style guide to my wireframes.I created high-fidelity clickable prototypes for mobile and desktop views.</p>
+                  <div>
+                    <img src="energyGovImages/energyGov.hi-fi_mockups.png" class="caseStudySmallImgNoBorder">
+                 </div>
+                
+              
+                    <h3>Conclusion</h3>
+                    <p>This project was challenging because of the amount of pages on the site. The original navigation was poorly laid out, so the user would get lost. I redesigned it so that the primary navigation is persistent and I did card sorting on the menus so that the secondary navigation led the user to their desired information with a visible way back. I clearly labeled the Home page sections and removed unnecessary content making the user experience much simpler. <br><br>
+
+                        If I were to continue my research and design process on this project, I would like to test to see if the primary menu would be more convenient to use if it were on the bottom. I think this would be easier for the user to reach with their thumb and would feel more like a mobile app.
+                        </p>
+                        <p class="textLink">View Next Case Study</p>       
+   </div>
+</section>
+<footer>
+    <p class="copyright">© 2022</p>
+    <ul>
+      <a href="https://www.linkedin.com/in/jason-wesley-andrews/" target="_blank"><li><img src="images/linkedin_logo_light.png" class="footerIcons"></li></a>
+      <a href="mailto:jasonwesleyandrews@gmail.com"><li><img src="images/mail_logo_light.png" class="footerIcons"></li></a>
+        
+    </ul>
+  </footer>
+</body>
+<script src="js/index.js"></script>
+</html>
