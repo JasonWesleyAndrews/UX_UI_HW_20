@@ -1,11 +1,9 @@
+
 $("#mobileNav").on("click", function() {
     if ( $(".subNav").first().is( ":hidden" ) ) {
       $(".subNav").slideDown("slow");
       $(".grayBG").fadeIn("slow");
       document.getElementById("mobileNav").innerHTML = "X";
-      
-  
-    
       
     } else {
       $(".subNav").slideUp("slow");
@@ -14,24 +12,14 @@ $("#mobileNav").on("click", function() {
     }
   });
 
- 
-
-
-
-  /*
-$("#mobileNav").on("click", function(){
-    $(".subNav").slideDown("slow");
-});
-*/
-/*
-$("#mobileNav").on("click", function() {
-    if ( $(".subNav").first().is( ":hidden" ) ) {
-      $(".subNav").slideDown("slow");
-      document.getElementById("grayBG").style.display="block";
-      
-    } else {
-      $(".subNav").slideUp("slow");
-      document.getElementById("grayBG").style.display="none";
-
-    }
-  }); */
+  function myFunction(x) {
+    if (x.matches) {
+      $(".subNav").slideUp("fast");
+      $(".grayBG").fadeOut("fast");
+      document.getElementById("mobileNav").innerHTML = "Menu";
+    } 
+  }
+  
+  var x = window.matchMedia("(min-width: 600px)")
+  myFunction(x)
+  x.addListener(myFunction)

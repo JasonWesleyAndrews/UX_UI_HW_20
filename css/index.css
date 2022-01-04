@@ -1,4 +1,11 @@
 /* general styles */
+.logo {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
 
 
 html {
@@ -10,32 +17,30 @@ a:link {color: #373737;}
 a {
    text-decoration: none;
 }
-
-
 a:visited {
     color: #373737;
 }
 a:hover {
-    color: #37919B;
-    
+    color: #37919B;   
 }
-
 li:hover {
     color: #37919B;
+    
 }
 .skillsList li:hover {
     color: #373737;
 }
+.textUnderlined {
+    text-decoration: underline;
+  }
 body {
     background-color: white;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    font-family: Arial, sans-serif, Spartan;
-    color: #373737; 
-    
-    
+    font-family: 'Poppins', sans-serif;
+    color: #373737;   
 }
 section {
     display: flex;
@@ -54,8 +59,7 @@ section {
     background-color: gray;
     height: 100%;
     width: 1200px;
-    opacity: 65%; 
-    
+    opacity: 65%;    
 }
 /* header styles */
 header {
@@ -64,23 +68,25 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 16px 0px 16px;
-    height: 60px;
+    height: 80px;
     box-shadow: 0 4px 2px -2px #CECECE;      
 }
-
 header ul { 
-    list-style-type: none;
-    
+    list-style-type: none;  
 }
 nav {display: flex;
-     flex-direction: row;}
-.mobileNav { display: none;}
+     flex-direction: row;
+    margin: 10px;
+    }
+
+.mobileNav { display: none;
+             cursor: pointer;
+}
 .mobileNav:hover {
     box-shadow: 0px 4px 8px #CECECE;
     color: #37919B;
     border-color: #37919B;
-    
-    }
+    } 
 .subNav {
     display: none;
     list-style-type: none;
@@ -93,7 +99,6 @@ nav {display: flex;
     max-width: 1200px;
     padding-bottom: 10px;
 }
-
 .subNavItem {
     margin-left: 6px;
 }
@@ -103,7 +108,6 @@ nav {display: flex;
     background-color: #37919B;
     color: white;
 }
-
 .contactButton:hover {
     box-shadow: 0px 4px 8px #CECECE;
     color: #fff;
@@ -113,7 +117,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    align-items: baseline;
+    align-items: baseline;  
 }
   /* text styles */ 
   b, strong {
@@ -128,24 +132,20 @@ h1 {
   font-size: 38px;
   white-space: nowrap;
   font-weight: 100;
-}
-h2 a:hover {
-    color: #373737;
-    text-decoration: none;
+  margin-top: 40px;
+  
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 30px;
     white-space: nowrap;
-    font-family: share;
+    font-family: cursive;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
-h2:hover {
-    color:#37919B;
-}
-
 h3 {
-    font-size: 22px !important;
-    margin-top: 40px;
+    font-size: 24px !important;
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 h4 {
@@ -154,7 +154,7 @@ h4 {
     font-weight: 100; 
 }
 h5 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 20px 0px 10px 0px;
 }
 .heading {
@@ -164,8 +164,10 @@ h5 {
     align-items: center;
 }
 li { 
-    padding: 14px 14px; 
-    
+    padding: 14px 14px;     
+}
+.mainNav li {
+    margin: 10px;
 }
 .subHeading {
     display: flex;
@@ -207,7 +209,6 @@ li {
 }
 .mainIcons { height: 22px;}
 
-
 /* about me page styles */
 .heading {
     margin: 15px 0px 0px 0px;
@@ -223,7 +224,6 @@ li {
    margin: 5px 0px 20px 20px;
    border-radius: 8px;
    box-shadow: 4px 4px 8px #CECECE;
-   
 }
 
 .aboutMeImgLeft {
@@ -232,13 +232,11 @@ li {
     margin: 5px 20px 20px 0px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px #CECECE;
-    
  }
 /* my work styles */
 .myWork {
     height: auto;
-    margin: 0px 0px 10px 0px;
-    
+    margin: 0px 0px 10px 0px;  
 }
 .caseStudy {
     width: 450px;
@@ -268,23 +266,20 @@ li {
     box-shadow: 0px 4px 8px #CECECE;
     border-radius: 8px;
     padding: 10px 0px 10px 0px;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
 }
 .skillsCenter {
     grid-area: skillsCenter;
     box-shadow: 0px 4px 8px #CECECE;
     border-radius: 8px;
     padding: 10px 0px 10px 0px;
-    
 }
 .skillsRight {
     grid-area: skillsRight;
     box-shadow: 0px 4px 8px #CECECE;
     border-radius: 8px;
     padding: 10px 0px 10px 0px;
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 }
 .skills {
     display: grid; 
@@ -292,14 +287,11 @@ li {
     grid-template-areas: 'skillsLeft skillsCenter skillsRight';
     width: 80%;
     margin: 10px 0px 10px 0px;
-    
 }
 
 div .skills{
     margin: 0px;
-    
 }
-
 .skills li {
     line-height: 1;
     list-style-type: none;
@@ -307,22 +299,25 @@ div .skills{
 }
 /* case study styles */
 
+.caseStudyLogos {
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.GAPlogo {
+    width: 55%;
+    margin-bottom: 10px;
+}
+
 .caseStudyTestLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-
-
  .caseStudyBody li:hover {
     color: #373737
-}
-.moveAbroadGif {
-   
-    height: 400px;
-    width: auto;
-    margin-bottom: 10px;
 }
 
 .myWork {
@@ -335,14 +330,11 @@ div .skills{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-
 .caseStudyStackedImgContainer {
      display: flex;
      flex-direction: column;
-     width: 49%;
-     
+     width: 49%; 
 }
 .caseStudyThreeImgContainer {
     display: flex;
@@ -352,22 +344,18 @@ div .skills{
 .ThreeImgContainer {
     width: 49%;
 }
-
 .caseStudyDoubleImg {
     width: 49%;
 }
-
 .doubleImgRowContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
     max-width: 200px;
 }
 .doubleRowImg {
     width: 100%;
 }
-
 .imgLimit {
     width: 80%;
     margin-left: auto;
@@ -375,8 +363,6 @@ div .skills{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-
 }
 .caseStudyBody {
     width: 80%;
@@ -386,19 +372,23 @@ div .skills{
     display: flex;
     justify-content: space-between;
     transition: all .2s ease-out;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .designIcon {
     width: 80px;
     height: 80px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px #CECECE;
+    
     border: solid;
     border-color: #373737;
     border-width: 1px;
-    transition: all .2s ease-out;
-   
-    
+    transition: all .2s ease-out;  
+}
+.designIcon:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 8px #CECECE;
+    color: #37919B;
+    border-color: #37919B;
 }
 .caseStudyLargeImg {
   width: 100%;
@@ -422,28 +412,39 @@ div .skills{
     width: 100%;
     margin-bottom: 10px;
 }
-
 .blockQuoteContainer {
     display: flex;
     justify-content: flex-end;
     color: #9B9A9A;
-    
 }
 .blockquote {
     font-size: 20px ;
     font-weight: 100;
     max-width: 66%;  
-    padding: 20px 0px 20px 0px; 
-    
+    padding: 20px 0px 20px 0px;  
 }
 .textLink {
-    text-decoration: underline;
-    font-size: 14px;
+   
+    font-size: 12px;
+    display: flex; 
+        border-radius: 8px ;
+        border-color: #373738 ;
+        border-style: inset;
+        border-width: thin;
+        transition: all .2s ease-out;  
+        padding: 6px;
+        justify-content: center;
+        width: 130px;
 }
-.designIcon:hover {
-    transform: scale(1.1); 
-    
-}
+
+.textLink:hover {
+    box-shadow: 0px 4px 8px #CECECE;
+    color: #37919B;
+    border-color: #37919B;
+    transform: scale(1.05); 
+    } 
+
+
 
 /* footer styles */
 footer {
@@ -473,22 +474,12 @@ footer ul {
     height: 20px
 }
 .caseStudy:hover {
-    
     transform: scale(1.03); 
-   
-    
-    
 }
 /* media queries */ 
-
- 
-  
- 
-
 @media (max-width: 690px) {
   header ul { font-size: 14px;}
-  h2 {font-size: 28px}
-  h1 {font-size: 32px;}
+  
 
 .designIcon {
     width: 60px;
@@ -528,6 +519,7 @@ footer ul {
     }
 .mainNav {
     padding: 0;
+    
 }
     .skills {
        display: flex;
@@ -564,8 +556,6 @@ footer ul {
       justify-content: center;
       align-items: center;
       width: 100%;
-      
-      
      }
      .caseStudy {
         width: 80%;
@@ -576,7 +566,6 @@ footer ul {
         width: 90%;
     }
     .caseStudyBody {
-        width: 90%;
-        
+        width: 90%; 
     }
 }
