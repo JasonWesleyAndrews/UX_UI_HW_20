@@ -6,8 +6,9 @@
     align-items: center;
     margin: 10px;
 }
-
-
+.name {
+    margin-bottom: 0px;
+}
 html {
     scroll-behavior: smooth;
     background-color: #F7F9FA;
@@ -41,6 +42,7 @@ body {
     max-width: 1200px;
     font-family: 'Poppins', sans-serif;
     color: #373737;   
+    box-shadow: 0px 0px 10px #CECECE;
 }
 section {
     display: flex;
@@ -69,7 +71,7 @@ header {
     justify-content: space-between;
     padding: 0px 16px 0px 16px;
     height: 80px;
-    box-shadow: 0 4px 2px -2px #CECECE;      
+         
 }
 header ul { 
     list-style-type: none;  
@@ -137,7 +139,7 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 20px;
     white-space: nowrap;
     
     margin-top: 0px;
