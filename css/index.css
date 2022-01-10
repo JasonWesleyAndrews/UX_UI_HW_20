@@ -1,4 +1,7 @@
 /* general styles */
+.current{
+    color: red;
+}
 .logo {
     width: 60px;
     display: flex;
@@ -13,8 +16,6 @@ html {
     scroll-behavior: smooth;
     background-color: #F7F9FA;
 }
-a:link {color: #373737;}
-
 a {
    text-decoration: none;
 }
@@ -24,6 +25,7 @@ a:visited {
 a:hover {
     color: #37919B;   
 }
+
 li:hover {
     color: #37919B;
     
@@ -31,9 +33,6 @@ li:hover {
 .skillsList li:hover {
     color: #373737;
 }
-.textUnderlined {
-    text-decoration: underline;
-  }
 body {
     background-color: white;
     margin: 0;
@@ -104,6 +103,7 @@ nav {display: flex;
 .subNavItem {
     margin-left: 6px;
 }
+.current a {color: #37919B}
 .contactButton a {color:white;}
 .contactButton {
     border-radius: 8px ;
@@ -178,6 +178,7 @@ li {
 .caseStudy p {
     font-size: 14px;  
 }
+
 /* home page styles */
 .homeText {
     padding: 0px 20px 0px 16px;
@@ -378,8 +379,8 @@ div .skills{
     margin-top: 20px;
 }
 .designIcon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 8px;
     
     border: solid;
