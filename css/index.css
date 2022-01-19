@@ -87,7 +87,7 @@ nav {display: flex;
 .mobileNav:hover {
     box-shadow: 0px 4px 8px #CECECE;
     color: #37919B;
-    border-color: #37919B;
+    
     } 
 .subNav {
     display: none;
@@ -443,8 +443,8 @@ div .skills{
 .textLink:hover {
     box-shadow: 0px 4px 8px #CECECE;
     
-    border-color: #37919B;
-    transform: scale(1.05); 
+    
+    transform: scale(1.02); 
     } 
 
 
@@ -477,7 +477,7 @@ footer ul {
     height: 20px
 }
 .caseStudy:hover {
-    transform: scale(1.03); 
+    transform: scale(1.02); 
 }
 /* media queries */ 
 @media (max-width: 690px) {
