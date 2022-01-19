@@ -391,9 +391,7 @@ div .skills{
 }
 .designIcon:hover {
     transform: scale(1.05); 
-    box-shadow: 0px 4px 8px #CECECE;
-    color: #37919B;
-    border-color: #37919B;
+    box-shadow: 0px 4px 8px #CECECE;   
 }
 .caseStudyLargeImg {
   width: 100%;
@@ -444,7 +442,7 @@ div .skills{
 
 .textLink:hover {
     box-shadow: 0px 4px 8px #CECECE;
-    color: #37919B;
+    
     border-color: #37919B;
     transform: scale(1.05); 
     } 
@@ -493,6 +491,10 @@ footer ul {
 }
 }
 @media (max-width: 600px) {
+    h4 {
+       
+        margin: 16px; 
+    }
     h1 {
         margin-top: 10px;
     }
@@ -570,7 +572,7 @@ footer ul {
       width: 100%;
      }
      .caseStudy {
-        width: 80%;
+        width: 90%;
         height: 355px;
         margin: 20px 0px 20px 0px;
     }
