@@ -55,6 +55,16 @@ section {
     border: none;
     border-radius: 4px;
 }
+
+.styledHRcustom {
+    background-color: #37919B;
+    width: 50%;
+    height: 4px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
 .grayBG {
     position: fixed;
     display: none;
@@ -157,9 +167,15 @@ h4 {
     font-weight: 100; 
 }
 h5 {
-    font-size: 20px;
-    margin: 20px 0px 10px 0px;
+    font-size: 22px;
+    margin: 20px 0px 16px 0px;
 }
+
+h6 {
+    font-size: 24px;
+    margin: 0px;
+}
+
 .heading {
     display: flex;
     
@@ -463,6 +479,8 @@ footer {
     display: flex;
     justify-content: flex-start;
     padding: 20px;
+    margin-bottom: 14px;
+    
 }
 footer ul { 
     display: flex;
@@ -535,30 +553,7 @@ footer ul {
     padding: 0;
     
 }
-    .skills {
-       display: flex;
-       flex-direction: column;
-       box-shadow: 0px 4px 8px #CECECE;
-       margin: 10px 0px 20px 0px;
-       padding: 10px 0px 10px 0px;
-       border-radius: 8px;
-} 
-    .skillsLeft {
-        box-shadow: none;
-        
-    }
-    .skillsCenter {
-        box-shadow: none;
-    }
-    .skillsRight {
-        box-shadow: none;
-    }
-    .skillsList {
-       list-style-type: none;
-       text-align: center;
-       margin: 0;
-       padding: 0;
-}
+
     .aboutMeContent {
        width: 90%;
 }
@@ -583,3 +578,33 @@ footer ul {
         width: 90%; 
     }
 }
+
+@media (max-width: 900px) { 
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 8px #CECECE;
+        margin: 10px 0px 20px 0px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 8px;
+ } 
+     .skillsLeft {
+         box-shadow: none;
+         
+     }
+     .skillsCenter {
+         box-shadow: none;
+     }
+     .skillsRight {
+         box-shadow: none;
+     }
+     .skillsList {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+ }
+}
+
+
