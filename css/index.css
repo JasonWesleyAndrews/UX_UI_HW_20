@@ -499,6 +499,7 @@ footer ul {
 }
 /* media queries */ 
 @media (max-width: 690px) {
+    .logo {width: 44px;}
   header ul { font-size: 14px;}
   
 
@@ -559,6 +560,7 @@ footer ul {
 }
 }
 @media (max-width: 750px) {
+  
     .myWork {
       display: flex;
       flex-direction: column;
@@ -580,7 +582,7 @@ footer ul {
 }
 
 @media (max-width: 900px) { 
-
+    
     .skills {
         display: flex;
         flex-direction: column;
