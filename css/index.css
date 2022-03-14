@@ -3,7 +3,7 @@
     color: red;
 }
 .logo {
-    width: 60px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +183,7 @@ h6 {
     align-items: center;
 }
 li { 
-    padding: 14px 14px;     
+    padding: 11px 11px;     
 }
 .mainNav li {
     margin: 10px;
@@ -451,7 +451,7 @@ div .skills{
         border-style: inset;
         border-width: thin;
         transition: all .2s ease-out;  
-        padding: 6px;
+        padding: 4px;
         justify-content: center;
         width: 130px;
 }
@@ -545,7 +545,7 @@ footer ul {
         border-style: inset;
         border-width: thin;
         margin: 0px 10px;
-        padding: 13px;
+        padding: 10px;
         justify-content: center;
         width: 41px;
     }
