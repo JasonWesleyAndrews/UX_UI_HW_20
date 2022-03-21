@@ -453,7 +453,7 @@ div .skills{
         transition: all .2s ease-out;  
         padding: 4px;
         justify-content: center;
-        width: 130px;
+        width: 80px;
 }
 
 .textLink:hover {
