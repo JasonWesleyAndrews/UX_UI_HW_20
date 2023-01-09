@@ -9,6 +9,7 @@
     align-items: center;
     margin: 10px;
 }
+
 .name {
     margin-bottom: 0px;
 }
@@ -39,7 +40,7 @@ body {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    max-width: 1100px;
     font-family: 'Poppins', sans-serif;
     color: #373737;   
     box-shadow: 0px 0px 10px #CECECE;
@@ -77,6 +78,7 @@ section {
 header {
     display: flex;
     align-items: center;
+    box-shadow: 0px 4px 8px #CECECE;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 16px 0px 16px;
@@ -351,7 +353,9 @@ div .skills{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
+
 .caseStudyStackedImgContainer {
      display: flex;
      flex-direction: column;
@@ -409,6 +413,23 @@ div .skills{
     transform: scale(1.05); 
     box-shadow: 0px 4px 8px #CECECE;   
 }
+.MedImgWrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+  }
+.caseStudyMedImg{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px #CECECE;
+    margin-bottom: 10px;
+  }
 .caseStudyLargeImg {
   width: 100%;
   border-style: solid;
@@ -443,28 +464,14 @@ div .skills{
     padding: 20px 0px 20px 0px;  
 }
 .textLink {
-   
     font-size: 12px;
+    text-decoration: underline;
     display: flex; 
-        border-radius: 8px ;
-        border-color: #373738 ;
-        border-style: inset;
-        border-width: thin;
-        transition: all .2s ease-out;  
-        padding: 4px;
-        justify-content: center;
-        width: 80px;
+    transition: all .2s ease-out;  
+    
+    justify-content: center;
+    width: 80px;
 }
-
-.textLink:hover {
-    box-shadow: 0px 4px 8px #CECECE;
-    
-    
-    transform: scale(1.02); 
-    } 
-
-
-
 /* footer styles */
 footer {
     
@@ -507,7 +514,6 @@ footer ul {
     width: 60px;
     height: 60px;
     border-radius: 8px;
-}
 }
 @media (max-width: 600px) {
     h4 {
