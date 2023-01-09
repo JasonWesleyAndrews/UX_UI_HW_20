@@ -1,7 +1,5 @@
 /* general styles */
-.current{
-    color: red;
-}
+
 .logo {
     width: 50px;
     display: flex;
@@ -226,7 +224,6 @@ li {
     justify-content: space-around;
     align-items: center;
     padding: 20px 100px 30px 100px;
-    
     z-index: -1;   
 }
 .mainIcons { height: 22px;}
@@ -614,5 +611,4 @@ footer ul {
         padding: 0;
  }
 }
-
-
+}
