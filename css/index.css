@@ -1,5 +1,4 @@
 /* general styles */
-
 .logo {
     width: 50px;
     display: flex;
@@ -7,13 +6,12 @@
     align-items: center;
     margin: 10px;
 }
-
 .name {
     margin-bottom: 0px;
 }
 html {
     scroll-behavior: smooth;
-    background-color: #F7F9FA;
+    background-color: #F2F5F7;
 }
 a {
    text-decoration: none;
@@ -38,7 +36,7 @@ body {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1100px;
+    max-width: 1200px;
     font-family: 'Poppins', sans-serif;
     color: #373737;   
     box-shadow: 0px 0px 10px #CECECE;
@@ -54,7 +52,6 @@ section {
     border: none;
     border-radius: 4px;
 }
-
 .styledHRcustom {
     background-color: #37919B;
     width: 50%;
@@ -74,14 +71,14 @@ section {
 }
 /* header styles */
 header {
+    background-color: white;
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 8px #CECECE;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 16px 0px 16px;
-    height: 80px;
-         
+    height: 80px;       
 }
 header ul { 
     list-style-type: none;  
@@ -90,14 +87,12 @@ nav {display: flex;
      flex-direction: row;
     margin: 10px;
     }
-
 .mobileNav { display: none;
              cursor: pointer;
 }
 .mobileNav:hover {
     box-shadow: 0px 4px 8px #CECECE;
     color: #37919B;
-    
     } 
 .subNav {
     display: none;
@@ -146,13 +141,10 @@ h1 {
   white-space: nowrap;
   font-weight: 100;
   margin-top: 40px;
-  
 }
-
 h2 {
     font-size: 20px;
     white-space: nowrap;
-    
     margin-top: 4px;
     margin-bottom: 30px;
 }
@@ -170,15 +162,12 @@ h5 {
     font-size: 22px;
     margin: 20px 0px 16px 0px;
 }
-
 h6 {
     font-size: 24px;
     margin: 0px;
 }
-
 .heading {
     display: flex;
-    
     flex-direction: column;
     align-items: center;
 }
@@ -195,29 +184,11 @@ li {
 .caseStudy p {
     font-size: 14px;  
 }
-
 /* home page styles */
 .homeText {
     padding: 0px 20px 0px 16px;
     max-width: 600px;  
     text-align: center;
-}
-.homeImg {
-    width: 100%;
-    height: auto;  
-      
-}
-.homeImgContainer {
-    width: 50%;
-    padding: 0px 0px 0px 30px;
-    max-width: 300px;
-    min-width: 200px;
-    
-}
-.homeHero {
-    height: auto;
-    margin: 10px 10px 10px 10px;  
-  
 }
 .homePageIcons {
     display: flex;
@@ -227,13 +198,11 @@ li {
     z-index: -1;   
 }
 .mainIcons { height: 22px;}
-
 /* about me page styles */
 .heading {
     margin: 15px 0px 0px 0px;
     text-align: center;
 }
-
 .aboutMeContent {
     width: 80%;
     padding-bottom: 20px;
@@ -245,7 +214,6 @@ li {
    border-radius: 8px;
    box-shadow: 4px 4px 8px #CECECE;
 }
-
 .aboutMeImgLeft {
     width: 250px;
     float: left;
@@ -253,12 +221,17 @@ li {
     border-radius: 8px;
     box-shadow: 4px 4px 8px #CECECE;
  }
-/* my work styles */
+/* my work styles on Home page */
 .myWork {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     height: auto;
     margin: 0px 0px 10px 0px;  
 }
 .caseStudy {
+    background-color: white;
     width: 450px;
     height: 400px;
     text-align: center;
@@ -282,6 +255,7 @@ li {
     margin: 30px 10px 10px 10px;
 }
 .skillsLeft {
+    background-color: white;
     grid-area: skillsLeft;
     box-shadow: 0px 4px 8px #CECECE;
     border-radius: 8px;
@@ -289,12 +263,14 @@ li {
     margin-right: 20px; 
 }
 .skillsCenter {
+    background-color: white;
     grid-area: skillsCenter;
     box-shadow: 0px 4px 8px #CECECE;
     border-radius: 8px;
     padding: 10px 0px 10px 0px;
 }
 .skillsRight {
+    background-color: white;
     grid-area: skillsRight;
     box-shadow: 0px 4px 8px #CECECE;
     border-radius: 8px;
@@ -308,7 +284,6 @@ li {
     width: 80%;
     margin: 10px 0px 10px 0px;
 }
-
 div .skills{
     margin: 0px;
 }
@@ -317,42 +292,30 @@ div .skills{
     list-style-type: none;
     text-align: center;
 }
-/* case study styles */
-
+/* case study styles for individual pages */
 .caseStudyLogos {
     max-width: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .GAPlogo {
     width: 55%;
     margin-bottom: 10px;
 }
-
 .caseStudyTestLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
- .caseStudyBody li:hover {
+.caseStudyBody li:hover {
     color: #373737
-}
-
-.myWork {
-    display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap;
 }
 .caseStudyDoubleImgContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
-
 .caseStudyStackedImgContainer {
      display: flex;
      flex-direction: column;
@@ -400,7 +363,6 @@ div .skills{
     width: 70px;
     height: 70px;
     border-radius: 8px;
-    
     border: solid;
     border-color: #373737;
     border-width: 1px;
@@ -414,7 +376,6 @@ div .skills{
     display: flex;
     justify-content: center;
     width: 100%;
-  
   }
 .caseStudyMedImg{
     display: flex;
@@ -428,13 +389,13 @@ div .skills{
     margin-bottom: 10px;
   }
 .caseStudyLargeImg {
-  width: 100%;
-  border-style: solid;
-  border-color: #E8E8E8;
-  border-width: 1px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px #CECECE;
-  margin-bottom: 10px;
+    width: 100%;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px #CECECE;
+    margin-bottom: 10px;
 }
 .caseStudySmallImg {
     width: 100%;
@@ -465,13 +426,11 @@ div .skills{
     text-decoration: underline;
     display: flex; 
     transition: all .2s ease-out;  
-    
     justify-content: center;
     width: 80px;
 }
 /* footer styles */
 footer {
-    
     background-color: #373738;
     display: flex;
     justify-content: space-between;
@@ -483,8 +442,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     padding: 20px;
-    margin-bottom: 14px;
-    
+    margin-bottom: 14px;  
 }
 footer ul { 
     display: flex;
@@ -495,7 +453,6 @@ footer ul {
     list-style-type: none;   
 }
 .footerIcons {
-   
     height: 20px
 }
 .caseStudy:hover {
@@ -503,10 +460,8 @@ footer ul {
 }
 /* media queries */ 
 @media (max-width: 690px) {
-    .logo {width: 44px;}
-  header ul { font-size: 14px;}
-  
-
+.logo {width: 44px;}
+header ul { font-size: 14px;}
 .designIcon {
     width: 60px;
     height: 60px;
