@@ -163,7 +163,7 @@ h5 {
     margin: 20px 0px 16px 0px;
 }
 h6 {
-    font-size: 24px;
+    font-size: 22px;
     margin: 0px;
 }
 .heading {
@@ -459,7 +459,7 @@ footer ul {
     transform: scale(1.02); 
 }
 /* media queries */ 
-@media (max-width: 690px) {
+@media (max-width: 740px) {
 .logo {width: 44px;}
 header ul { font-size: 14px;}
 .designIcon {
