@@ -372,15 +372,20 @@ div .skills{
     transform: scale(1.05); 
     box-shadow: 0px 4px 8px #CECECE;   
 }
+/* for routing slip .doc */
 .MedImgWrapper{
     display: flex;
     justify-content: center;
     width: 100%;
   }
+.caseStudyMedImgContainer {
+    display: flex;
+    justify-content: center;
+}
 .caseStudyMedImg{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     border-style: solid;
     border-color: #E8E8E8;
     border-width: 1px;
