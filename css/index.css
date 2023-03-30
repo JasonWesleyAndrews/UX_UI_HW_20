@@ -421,7 +421,7 @@ div .skills{
     color: #9B9A9A;
 }
 .blockquote {
-    font-size: 20px ;
+    font-size: 18px ;
     font-weight: 100;
     max-width: 66%;  
     padding: 20px 0px 20px 0px;  
@@ -570,5 +570,7 @@ header ul { font-size: 14px;}
         margin: 0;
         padding: 0;
  }
+ .caseStudyMedImg{
+     width: 100%
 }
 }
