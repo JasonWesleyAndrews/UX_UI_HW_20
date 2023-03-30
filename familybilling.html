@@ -69,13 +69,13 @@
  </div>
 
     <h3>The Problem</h3>
-    <p>Each patient has a separate ledger, users spend too much time and energy billing families in the software.</p>
+    <p>Each patient has a separate ledger, users spend too much time and energy billing families using the software.</p>
     <h3>The Solution</h3>
-    <p>Tab-based options on a patient’s ledger to view and print individual, or combined balances for guarantors along with a new group ledger printout option.</p>
+    <p>Tab-based options on a patient’s ledger allowing them to view and print individual, or combined balances for guarantors along with a new group ledger printout option.</p>
     <h3>The User</h3>
-    <p>Someone who works in the front office for a dentist, orthodontist, or ortho surgeon. Typically the office manager, or some type of patient-facing front desk worker.</p>
+    <p>Someone who works in the front office for a dentist, orthodontist, or oral surgeon. Typically the office manager, or some type of patient-facing front desk worker.</p>
     <h3>The Goal</h3>
-    <p>To reduce friction for users when viewing and printing connected balances; Create an easy way to print an entire family bill.</p>
+    <p>To reduce friction for users when viewing and printing connected balances and to create an easy way to print an entire family bill.</p>
     <h3>The Process</h3>
      <div class="designIcons">
       <a href="#empathizeBB"><img src="images/designIcons/empathize_icon.png" class="designIcon"></a>
@@ -86,15 +86,15 @@
      </div>
      <h3 id="empathizeBB">Empathize / Research</h3>
      <p>The business prioritized ‘family billing’ because of customer requests on UserVoice. This project was originally assigned to another designer at the company who conducted the initial research. This involved 6 customer interviews to uncover the general pain points and competitive analysis of 4 dental practice management software solutions for this same issue.</p>
-     <div class="caseStudyDoubleImgContainer">
-      <div class="caseStudyDoubleImg"> 
-        <img src="familyBillingImages/stickyOnInvoice.png" class="caseStudySmallImg">
-      </div>
-      <div class="caseStudyDoubleImg"> 
-        <img src="familyBillingImages/comp_analysis_famBilling.png" class="caseStudySmallImg">
-      </div>
-   </div>
-  
+
+   <div class="caseStudyDoubleImgContainer">
+    <div class="caseStudyDoubleImg"> 
+      <img src="familyBillingImages/comp_analysis_famBilling.png" class="caseStudySmallImg">
+    </div>
+    <div class="caseStudyDoubleImg"> 
+      <img src="familyBillingImages/stickyOnInvoice.png" class="caseStudySmallImg">
+    </div>
+ </div>
    <blockquote class="blockquote">
     <em>“
       It's time-consuming and expensive to print out all these bills and add up the totals, but more importantly, it makes our practice look unprofessional and a little foolish. Patients have commented about our waste of paper.”</em> - Sarah B. (customer)
@@ -113,17 +113,22 @@
       <img src="familyBillingImages/Userstorymapping_FamBill.png" class="caseStudySmallImgNoBorder">
     </div>
 
-    <p>Once the original designer got to the ideation phase, she could not get buy-in for her solution because it involved too much change; I was asked by my boss to come in and pair with her to help make progress, this involved us taking a step back. After I was up-to-speed, the original designer was let go and this project was reassigned to me.</p>
+    <p>Once the original designer got to the ideation phase, she could not get buy-in for her solution because it involved too much change; I was asked by the UX manager to come in and pair with her to help make progress, this involved us taking a step back. After I was up-to-speed, the original designer was let go and this project was reassigned to me.</p>
     
         <h3 id="ideationBB">Ideation</h3>
-      <p>The problem was clear, but the solution was not. Many other dental practice management systems are account based, this means that there is an account that you add patients to, and the designated guarantor of that group pays for everyone in that group. Our system is patient based, this means that each patient must define who their guarantor is and no real “group” has been established, just a spider web of connections.</p>
-    <p>Since these relationships were already created by our users for their patients, and it can be quite complex, I thought the best move was to redesign the ledger to have tabs that will show a patient’s individual ledger, a combined ledger for the patient’s that this person is the guarantor for, and/or a combined ledger for the patient’s that are guaranteed by this person. </p>
+      <p>The problem was clear, but the solution was not. Many other dental practice management systems are account based, this means that there is an account that you add patients to, and the designated guarantor of that group pays for everyone in that group. Our system is not like this, it's patient based. This means that each patient must define who their guarantor is and no real “group” has been established, just a spider web of connections.</p>
+    <p>Since these relationships were already created by our users for their patients, and it can be quite complex, I thought the best move was to redesign the ledger to have tabs that will show a patient’s individual ledger, a combined ledger for the patient’s that this person is the guarantor for, and/or a combined ledger for the patient’s that are guaranteed by this person. That’s right, a patient who is not self-responsible can be the guarantor of other patients.</p>
 
-      <p>That’s right, a patient who is not self-responsible can be the guarantor of other patients. Using Figma, I created mockups of every variation that could exist in the system by creating a complex family example. A patient in the system could have a guarantor, but also be a guarantor. This is a person who is not financially self-responsible, but they are responsible for another person. This is an edge case, but we wanted to keep this existing functionality for our users, this led us to a potential 3 tab system:</p>
+      <p>Using Figma, I created mockups of every variation that could exist in the system by creating a complex family example.</P>
+        <div>
+          <img src="familyBillingImages/Relationships_screenshots_famBilling.png" class="caseStudySmallImgNoBorder">
+        </div>
+        
+        <p>A patient in the system could have a guarantor, but also be a guarantor. This is a person who is not financially self-responsible, but they are responsible for another person. This is an edge case, but we wanted to keep this existing functionality for our users, this led us to a potential 3 tab system:</p>
                 <ul>
                   <li>(Patient Name) Shows the patient’s individual ledger.</li>
-                  <li>(Guaranteed By) Shows the combined ledger for this patient’s guarantor.</li>
                   <li>(Guarantor For) Shows this patient’s combined guarantor ledger.</li>
+                  <li>(Guaranteed By) Shows the combined ledger for this patient’s guarantor.</li>
                </ul>
                <div>
                 <img src="familyBillingImages/3_ledger_types.png" class="caseStudyLargeImg">
@@ -150,7 +155,7 @@
         <img src="familyBillingImages/Print_options_FamBilling.png" class="caseStudyLargeImg">
       </div>
 
-       <h6>This is what the guarantor statement looks like:</h6>
+       <p>This is what the guarantor statement looks like:</p>
        <div class="caseStudyDoubleImgContainer">
         <div class="caseStudyDoubleImg"> 
           <img src="familyBillingImages/connected stament1.png" class="caseStudySmallImg">
@@ -169,15 +174,13 @@
                 
                 <h6>What I Wanted to Learn:</h6>
                 <ul>
-                  <li>Do users understand the concept of viewing a ledger as patient and as guarantor?
-                  </li>
-                  <li>Can users customize their routing slip?</li>
+                  <li>Do users understand the concept of viewing a ledger as patient and as guarantor?</li>
                   <li>Do users understand how to switch patient and guarantor ledger views?</li>
                   <li>Do group ledgers have the information and layout expected?</li>
                   <li>Do users expect to see individual ledger views on the group ledger? Not just patient overviews. Where?</li>
                   <li>What do users think of the redesign of the ledger?</li>
                </ul>
-               <h6>Key Takeaways From User feedback:</h6>
+               <h6>Key Takeaways From User Feedback:</h6>
                <ul>
                 <li>100% of users understand the idea of patient vs. guarantor ledger view.</li>
                 <li>100% of users prefer the updated ledger design.</li>
@@ -197,7 +200,7 @@
                   <p>These requests are validated by previous customer feedback, as a result they have been added to the roadmap.</p>
               
                     <h3>Conclusion</h3>
-                    <p>I presented the prototype and research findings to the PLMs along with my team and we decided to move forward with this guarantor billing solution to solve the family billing problem. Because the guarantor connections already exist in our user’s systems, we can deliver value quickly this way. Another team investigated the ledger inaccuracies and introduced several changes that remedied the issue.</p>
+                    <p>I presented the prototype and research findings to the PLMs along with my team and we decided to move forward with this guarantor billing solution to solve the family billing problem. Because the guarantor connections already exist in our user’s systems, we can deliver value quickly this way. Another team investigated the ledger inaccuracies and introduced several changes that remedied the issue. And the designs shown here have been coded and will be in the software update coming out next week.</p>
                     
                     <p>On average this new family billing process saves our user 32 clicks, 9 keystrokes, and 1 minute and 52 seconds per family. Collectively, this new feature will save our customers millions in labor costs over the coming years.</p>
                     <div class="imgLimit">
