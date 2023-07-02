@@ -15,21 +15,21 @@ html {
 }
 a {
    text-decoration: none;
-   color: #373737;
+   color: #000000;
 }
 a:visited {
-    color: #373737;
+    color: #000000;
 }
 a:hover {
-    color: #37919B;   
+    color: #000000;   
 }
 
 li:hover {
-    color: #37919B;
+    color: #000000;
     
 }
 .skillsList li:hover {
-    color: #373737;
+    color: #000000;
 }
 body {
     background-color: white;
@@ -38,7 +38,7 @@ body {
     margin-right: auto;
     max-width: 1200px;
     font-family: 'Poppins', sans-serif;
-    color: #373737;   
+    color: #000000;   
     box-shadow: 0px 0px 10px #CECECE;
 }
 section {
@@ -46,16 +46,16 @@ section {
     justify-content: center;   
 }
 .styledHR {
-    background-color: #37919B;
+    background-color: #000000;
     width: 50%;
-    height: 4px;
+    height: 1px;
     border: none;
     border-radius: 4px;
 }
 .styledHRcustom {
-    background-color: #37919B;
+    background-color: #000000;
     width: 50%;
-    height: 4px;
+    height: 1px;
     border: none;
     border-radius: 4px;
     margin-top: 32px;
@@ -92,7 +92,7 @@ nav {display: flex;
 }
 .mobileNav:hover {
     box-shadow: 0px 4px 8px #CECECE;
-    color: #37919B;
+    color: #000000;
     } 
 .subNav {
     display: none;
@@ -109,17 +109,22 @@ nav {display: flex;
 .subNavItem {
     margin-left: 6px;
 }
-.current a {color: #37919B}
-.contactButton a {color:white;}
+.current a {
+    color: #000000;
+    text-decoration: underline;
+}
+.contactButton a {
+    color:white;
+}
 .contactButton {
-    border-radius: 8px ;
-    background-color: #37919B;
+    border-radius: 4px ;
+    background-color: #000000;
     color: white;
 }
 .contactButton:hover {
     box-shadow: 0px 4px 8px #CECECE;
     color: #fff;
-    background-color: #2C747C;
+    background-color: #343434;
 }
 nav ul {
     display: flex;
@@ -133,8 +138,9 @@ nav ul {
 }
 p { 
     line-height: 1.5;
-    font-weight: 100;
+    font-size: 15px;
     margin-top: 6px;
+
 }
 h1 {
   font-size: 38px;
@@ -163,7 +169,7 @@ h5 {
     margin: 20px 0px 16px 0px;
 }
 h6 {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0px;
 }
 .heading {
@@ -211,14 +217,14 @@ li {
    width: 250px;
    float: right;
    margin: 5px 0px 20px 20px;
-   border-radius: 8px;
+   border-radius: 4px;
    box-shadow: 4px 4px 8px #CECECE;
 }
 .aboutMeImgLeft {
     width: 250px;
     float: left;
     margin: 5px 20px 20px 0px;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 4px 4px 8px #CECECE;
  }
 /* my work styles on Home page */
@@ -238,7 +244,7 @@ li {
     overflow: hidden;
     margin: 20px;
     box-shadow: 4px 4px 8px #CECECE;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: all .2s ease-out;
 }
 .caseStudyPic {
@@ -258,7 +264,7 @@ li {
     background-color: white;
     grid-area: skillsLeft;
     box-shadow: 0px 4px 8px #CECECE;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 0px 10px 0px;
     margin-right: 20px; 
 }
@@ -266,14 +272,14 @@ li {
     background-color: white;
     grid-area: skillsCenter;
     box-shadow: 0px 4px 8px #CECECE;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 0px 10px 0px;
 }
 .skillsRight {
     background-color: white;
     grid-area: skillsRight;
     box-shadow: 0px 4px 8px #CECECE;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 0px 10px 0px;
     margin-left: 20px;  
 }
@@ -309,7 +315,7 @@ div .skills{
     justify-content: space-between;
 }
 .caseStudyBody li:hover {
-    color: #373737
+    color: #000000;
 }
 .caseStudyDoubleImgContainer {
     display: flex;
@@ -364,7 +370,7 @@ div .skills{
     height: 70px;
     border-radius: 8px;
     border: solid;
-    border-color: #373737;
+    border-color: #000000;
     border-width: 1px;
     transition: all .2s ease-out;  
 }
@@ -389,7 +395,7 @@ div .skills{
     border-style: solid;
     border-color: #E8E8E8;
     border-width: 1px;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0px 4px 8px #CECECE;
     margin-bottom: 10px;
   }
@@ -398,7 +404,7 @@ div .skills{
     border-style: solid;
     border-color: #E8E8E8;
     border-width: 1px;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0px 4px 8px #CECECE;
     margin-bottom: 10px;
 }
@@ -407,7 +413,7 @@ div .skills{
     border-style: solid;
     border-color: #E8E8E8;
     border-width: 1px;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0px 4px 8px #CECECE;
     margin-bottom: 10px;
 }
@@ -436,16 +442,18 @@ div .skills{
 }
 /* footer styles */
 footer {
-    background-color: #373738;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     height:76px;
 }
 .copyright {
     color: white;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding: 20px;
     margin-bottom: 14px;  
 }
@@ -461,12 +469,17 @@ footer ul {
     height: 20px
 }
 .caseStudy:hover {
-    transform: scale(1.02); 
+    transform: scale(1.03); 
 }
 /* media queries */ 
 @media (max-width: 740px) {
-.logo {width: 44px;}
-header ul { font-size: 14px;}
+
+    .logo {
+        width: 44px;
+    }
+    header ul {
+         font-size: 14px;
+        }
 .designIcon {
     width: 60px;
     height: 60px;
@@ -504,8 +517,8 @@ header ul { font-size: 14px;}
     } 
     .mobileNav { 
         display: flex; 
-        border-radius: 8px ;
-        border-color: #373738 ;
+        border-radius: 4px ;
+        border-color: #000000;
         border-style: inset;
         border-width: thin;
         margin: 0px 10px;
