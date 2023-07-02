@@ -77,7 +77,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     
-    box-shadow: 0px 4px 8px #CECECE;
+    box-shadow: 0px 2px 4px #CECECE;
     padding: 0px 16px 0px 16px;
     height: 60px     
 }
