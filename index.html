@@ -1,82 +1,134 @@
 <!DOCTYPE html>
 <html>
    <head>
+    <style>
+      body {background-color: #FBFEFF !important;}
+      </style>
      <title>Jason Andrews - Product Designer</title>
+     <link rel="icon" href="images/ja-logo.png" type="image/x-icon" />
+     <link rel="shortcut icon" href="images/ja-logo.png" type="image/x-icon" /> 
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="css/index.css" rel="stylesheet" type="text/css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   </head>  
-   <body>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+   
+    </head>  
+   <body class="mainPages">
        <!-- header -->
     <header>
-         <div>
-           <h2>Jason Andrews</h2>
-         </div>
-         <nav>
+    
+         
+          <a href="#"><img src="images/ja-logo.png" class="logo"></a>
+         
+          <nav>
              <ul class="mainNav">
-                <li class="navCollapse"><a href="#">Home</a></li>
-                <li class="navCollapse"><a href="aboutMe.html">About</a></li>
-                <li class="navCollapse">Work</li>
-                <li class="navCollapse">Resume</li>
+              <li class="current navCollapse"><a href="index.html">Home</a></li>
+                <li class="navCollapse"><a href="aboutme.html">About Me</a></li>
+                <li class="navCollapse"><a href="documents/Resume_Jason_Andrews.pdf" target="_blank">Resume</a></li>
                 <li id="mobileNav" class="mobileNav">Menu</li>
-                <li class="contactButton">Contact</li>
+                <li class="contactButton"><a href="mailto:jasonwesleyandrews@gmail.com">Contact</a></li>
              </ul>
-           </nav>
+            </nav>
+         
     </header>
    
     <ul class="subNav">
-      <li class="subNavItem"><a href="#">Home</a></li>
+      <a href="index.html"><li class="subNavItem">Home</li></a>
       <hr>
-      <li class="subNavItem"><a href="aboutMe.html">About</a></li>
+      <a href="aboutme.html"><li class="subNavItem">About Me</li></a>
       <hr>
-      <li class="subNavItem">Work</li>
-      <hr>
-      <li class="subNavItem">Resume</li>      
+      <a href="documents/Resume_Jason_Andrews.pdf" target="_blank"><li class="subNavItem">Resume</li></a>      
     </ul>
 <div id="grayBG" class="grayBG"></div>
      <!-- home page main section styles -->
   <section class="homeHero">
       <div class="homeText">
-          <h1>Product Designer</h1>
-    <p>Passionate about building high quality user experiences through conducting research and implementing data-driven decisions. A lifelong learner who has customer empathy and a love for solving problems.</p>
-     <div class="homePageIcons">
-         <img src="images/Dribbble.svg" class="mainIcons">
-         <img src="images/linkedin.svg" class="mainIcons"> 
-         <img src="images/Twitter.svg" class="mainIcons">
-    </div>
+          <h1 class="name">Jason Andrews</h1>
+          <h2>PRODUCT DESIGNER</h2>
+    <p>Passionate about building high-quality user experiences through conducting research and implementing data-informed decisions. A lifelong learner who has customer empathy and a love for solving problems.</p>
+     <!-- <div class="homePageIcons">
+         <a href="https://www.linkedin.com/in/jason-wesley-andrews/" target="_blank"><img src="images/linkedin_logo_dark.png" class="mainIcons"></a>
+         <a href="mailto:jasonwesleyandrews@gmail.com"><img src="images/mail_logo_dark.png" class="mainIcons"></a>
+         
+    </div> -->
   </div>
 
   </section>
 <hr class="styledHR">
   <div class="heading">
-       <!-- my work section, HW18 asked for this section to be coded with CSS grid, I used CSS grid on "My Skills" section instead  -->
-    <h4>My Work</h4>
+    <h4 id="MyWork">My Work</h4>
 </div>
   <section class="myWork">
-    <a href="bucketBook.html">
-    <div class="caseStudy">
-       <h3>Bucket Book</h3>
+
+    <a class="caseStudy" href="moveabroad.html">
+     <div>
+       <h5>Move Abroad</h3>
        <p>Mobile App Case Study</p>
-       <img src="images/bucketBook_mockups.png" class="caseStudyPic">
+       <img src="images/moveAbroad_mock1.png" class="caseStudyPic">
      </div> 
     </a>
-     <div class="caseStudy">
-        <h3>Georgia Animal Project</h3>
-        <p>Website Redesign Case Study</p>
-        <img src="images/GAP_aboutUs.png" class="caseStudyPic">
-    </div> 
-    <div class="caseStudy">
-        <h3>Energy.gov</h3>
-        <p>Website Redesign Case Study</p>
-        <img src="images/energy.govHomePage.png" class="caseStudyPic">
-    </div> 
+
+    <a class="caseStudy" href="routingslip.html">
+      <div>
+         <h5>Routing Slip</h3>
+         <p>UX Feature Design Case Study</p>
+         <img src="RSImages/routing_slip_mock.png" class="caseStudyPic">
+       </div> 
+      </a>
+      
+      <a class="caseStudy" href="familybilling.html">
+        <div>
+           <h5>Family Billing</h3>
+           <p>UX Design Case Study</p>
+           <img src="familyBillingImages/Family Billing Mock.png" class="caseStudyPic">
+         </div> 
+        </a>
+
+    <a class="caseStudy" href="gap.html">
+     <div>
+        <h5>Georgia Animal Project</h3>
+        <p>Web Design Case Study</p>
+        <img src="GAPImages/GAP_mockup1.png" class="caseStudyPic">
+     </div> 
+    </a>
+
+    <a class="caseStudy" href="bonsaioutlet.html">
+      <div>
+         <h5>BonsaiOutlet.com</h3>
+         <p>E-commerce UI Redesign</p>
+         <img src="images/Bonsai_outlet_mock_2.png" class="caseStudyPic">
+      </div> 
+     </a>
+
+    <a class="caseStudy" href="energygov.html">
+     <div>
+        <h5>Energy.gov</h3>
+        <p>Web Design Case Study</p>
+        <img src="images/energy.gov_cardImage1.png" class="caseStudyPic">
+     </div> 
+    </a>
+
+    <a class="caseStudy" href="bucketbook.html">
+      <div>
+         <h5>Bucket Book</h3>
+         <p>Mobile App Case Study</p>
+         <img src="images/bucketBookImages/bucketBook_mock1.png" class="caseStudyPic">
+       </div> 
+      </a>
+   
+     
+
+  
+  
 </section>
 <footer>
-    <p class="copyright">© 2022</p>
-    <ul>
-        <li><img src="images/Dribbble.svg" class="footerIcons"></li>
-        <li><img src="images/linkedin.svg" class="footerIcons"></li>
-        <li><img src="images/Twitter.svg" class="footerIcons"></li>
+    <p class="copyright">© 2023</p>
+    <ul class="footerLinks">
+      <a href="https://www.linkedin.com/in/jason-wesley-andrews/" target="_blank"><li><img src="images/linkedin_logo_light.png" class="footerIcons"></li></a>
+      <a href="mailto:jasonwesleyandrews@gmail.com"><li><img src="images/mail_logo_light.png" class="footerIcons"></li></a>
+        
     </ul>
   </footer>
 </body>

@@ -1,73 +1,103 @@
 /* general styles */
+
+.logo {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.name {
+    margin-bottom: 0px;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+}
 a {
    text-decoration: none;
+   color: #000000;
 }
-
 a:visited {
-    color: #373737
+    color: #000000;
 }
 a:hover {
-    color: #37919B;
+    color: #000000;   
 }
 li:hover {
-    color: #37919B;
+    color: #000000;
+    
 }
 .skillsList li:hover {
-    color: #373737;
+    color: #000000;
 }
 body {
-    
-    max-width: 1200px;
+    background-color: white;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
-    font-family: Arial, sans-serif, Spartan;
-    color: #373738 
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;   
+    
 }
 section {
     display: flex;
-    justify-content: center;   
+    justify-content: center; 
+ 
+  
 }
 .styledHR {
-    background-color: #37919B;
-    width: 150px;
-    height: 4px;
+    background-color: #000000;
+    width: 50%;
+    height: 1px;
     border: none;
     border-radius: 4px;
+}
+.styledHRcustom {
+    background-color: #000000;
+    width: 50%;
+    height: 1px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 32px;
+    margin-bottom: 50px;
 }
 .grayBG {
     position: fixed;
     display: none;
     background-color: gray;
     height: 100%;
-    width: 100%;
-    opacity: 65%; 
+    width: 1200px;
+    opacity: 65%;    
 }
 /* header styles */
 header {
+    background-color: white;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 16px 10px 16px;
-    height: 60px;
-    box-shadow: 0 4px 2px -2px #CECECE;
-
-       
+    
+    box-shadow: 0px 2px 4px #CECECE;
+    padding: 0px 16px 0px 16px;
+    height: 60px     
 }
 header ul { 
-    list-style-type: none;
-    
+    list-style-type: none;  
+    font-size: 14px;
 }
-nav {
-    display: flex;
-    flex-direction: row;
-}
+nav {display: flex;
+     flex-direction: row;
+    margin: 10px;
+    }
 .mobileNav { display: none;
+             cursor: pointer;
 }
 .mobileNav:hover {
     box-shadow: 0px 4px 8px #CECECE;
-}
+    color: #000000;
+    } 
 .subNav {
     display: none;
     list-style-type: none;
@@ -80,27 +110,31 @@ nav {
     max-width: 1200px;
     padding-bottom: 10px;
 }
-.mobileNav:hover {
-    color: #373738;
-}
 .subNavItem {
     margin-left: 6px;
 }
+.current a {
+    color: #000000;
+    text-decoration: underline;
+}
+.contactButton a {
+    color:white;
+}
 .contactButton {
-    border-radius: 8px ;
-    background-color: #37919B;
+    border-radius: 4px ;
+    background-color: #000000;
     color: white;
 }
 .contactButton:hover {
     box-shadow: 0px 4px 8px #CECECE;
     color: #fff;
-    background-color: #2C747C;
+    background-color: #343434;
 }
 nav ul {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    align-items: baseline;
+    align-items: baseline;  
 }
   /* text styles */ 
   b, strong {
@@ -108,44 +142,57 @@ nav ul {
 }
 p { 
     line-height: 1.5;
-    font-weight: 100;
+    font-size: 15px;
+    margin-top: 6px;
+
 }
 h1 {
   font-size: 38px;
   white-space: nowrap;
   font-weight: 100;
+  margin-top: 40px;
 }
 h2 {
-    font-size: 32px;
+    font-size: 20px;
     white-space: nowrap;
-    font-family: share;
+    margin-top: 4px;
+    margin-bottom: 30px;
 }
-h2:hover {
-    color:#37919B;
-}
-
 h3 {
-    font-size: 22px !important;
+    font-size: 24px !important;
+    margin-top: 24px;
+    margin-bottom: 0px;
 }
 h4 {
     font-size: 30px;
     white-space: nowrap;
     font-weight: 100; 
 }
+h5 {
+    font-size: 22px;
+    margin: 20px 0px 16px 0px;
+}
+h6 {
+    font-size: 22px;
+    margin: 0px;
+}
 .heading {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 li { 
-    padding: 14px 14px; 
-    
+    padding: 8px 8px;     
+}
+.mainNav li {
+    margin: 10px;
 }
 .subHeading {
     display: flex;
     justify-content: center;
 }
 .caseStudy p {
-    font-size: 14px;
+    font-size: 14px;  
 }
 /* home page styles */
 .homeText {
@@ -153,38 +200,19 @@ li {
     max-width: 600px;  
     text-align: center;
 }
-.homeImg {
-    width: 100%;
-    height: auto;       
-}
-.homeImgContainer {
-    width: 50%;
-    padding: 0px 0px 0px 30px;
-    max-width: 300px;
-    min-width: 200px;
-}
-.homeHero {
-    height: auto;
-    margin: 10px 10px 10px 10px;  
-  
-}
 .homePageIcons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 100px 30px 100px;
-    filter: invert(22%) sepia(6%) saturate(99%) hue-rotate(202deg) brightness(92%) contrast(96%);
     z-index: -1;   
 }
-.mainIcons { 
-    height: 20px;
-}
-
+.mainIcons { height: 22px;}
 /* about me page styles */
 .heading {
-    margin: 15px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
 }
-
 .aboutMeContent {
     width: 80%;
     padding-bottom: 20px;
@@ -193,23 +221,35 @@ li {
    width: 250px;
    float: right;
    margin: 5px 0px 20px 20px;
-   border-radius: 8px;
+   border-radius: 4px;
+   box-shadow: 4px 4px 8px #CECECE;
 }
-
-/* my work styles */
+.aboutMeImgLeft {
+    width: 250px;
+    float: left;
+    margin: 5px 20px 20px 0px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px #CECECE;
+ }
+/* my work styles on Home page */
 .myWork {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     height: auto;
-    margin: 0px 0px 10px 0px;
-    
+    margin: 0px 0px 10px 0px;  
 }
 .caseStudy {
-    width: 300px;
-    height: 300px;
+    background-color: white;
+    width: 450px;
+    height: 400px;
     text-align: center;
     overflow: hidden;
-    margin: 10px;
-    box-shadow: 0px 4px 8px #CECECE;
-    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 4px 4px 8px #CECECE;
+    border-radius: 4px;
+    transition: all .2s ease-out;
 }
 .caseStudyPic {
     width: 100%;
@@ -225,27 +265,27 @@ li {
     margin: 30px 10px 10px 10px;
 }
 .skillsLeft {
+    background-color: white;
     grid-area: skillsLeft;
     box-shadow: 0px 4px 8px #CECECE;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 0px 10px 0px;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
 }
 .skillsCenter {
+    background-color: white;
     grid-area: skillsCenter;
     box-shadow: 0px 4px 8px #CECECE;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 0px 10px 0px;
-    
 }
 .skillsRight {
+    background-color: white;
     grid-area: skillsRight;
     box-shadow: 0px 4px 8px #CECECE;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 0px 10px 0px;
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 }
 .skills {
     display: grid; 
@@ -253,20 +293,72 @@ li {
     grid-template-areas: 'skillsLeft skillsCenter skillsRight';
     width: 80%;
     margin: 10px 0px 10px 0px;
-    
 }
-
 div .skills{
     margin: 0px;
-    
 }
-
 .skills li {
     line-height: 1;
     list-style-type: none;
     text-align: center;
 }
-/* case study styles */
+/* case study styles for individual pages */
+.caseStudyLogos {
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GAPlogo {
+    width: 55%;
+    margin-bottom: 10px;
+}
+.caseStudyTestLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.caseStudyBody li:hover {
+    color: #000000;
+}
+.caseStudyDoubleImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.caseStudyStackedImgContainer {
+     display: flex;
+     flex-direction: column;
+     width: 49%; 
+}
+.caseStudyThreeImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ThreeImgContainer {
+    width: 49%;
+}
+.caseStudyDoubleImg {
+    width: 49%;
+}
+.doubleImgRowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 200px;
+}
+.doubleRowImg {
+    width: 100%;
+}
+.imgLimit {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .caseStudyBody {
     width: 80%;
     margin: 20px 0px 20px 0px;
@@ -274,35 +366,64 @@ div .skills{
 .designIcons {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    transition: all .2s ease-out;
+    margin-top: 20px;
 }
 .designIcon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px #CECECE;
+    border: solid;
+    border-color: #000000;
+    border-width: 1px;
+    transition: all .2s ease-out;  
 }
+.designIcon:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 8px #CECECE;   
+}
+/* for routing slip .doc */
+.MedImgWrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+.caseStudyMedImgContainer {
+    display: flex;
+    justify-content: center;
+}
+.caseStudyMedImg{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 1px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px #CECECE;
+    margin-bottom: 10px;
+  }
 .caseStudyLargeImg {
-  width: 100%;
-  border-style: solid;
-  border-color: #E8E8E8;
-  border-width: 1px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px #CECECE;
-  margin-bottom: 20px;
+    width: 100%;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 1px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px #CECECE;
+    margin-bottom: 10px;
 }
 .caseStudySmallImg {
     width: 100%;
     border-style: solid;
     border-color: #E8E8E8;
     border-width: 1px;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0px 4px 8px #CECECE;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .caseStudySmallImgNoBorder {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .blockQuoteContainer {
     display: flex;
@@ -310,35 +431,36 @@ div .skills{
     color: #9B9A9A;
 }
 .blockquote {
-    font-size: 20px ;
-    font-weight: 200;
+    font-size: 18px ;
+    font-weight: 100;
     max-width: 66%;  
-    padding: 20px 0px 30px 0px; 
-    
+    padding: 20px 0px 20px 0px;  
 }
 .textLink {
+    font-size: 12px;
     text-decoration: underline;
+    display: flex; 
+    transition: all .2s ease-out;  
+    justify-content: center;
+    width: 80px;
 }
-.designIcon:hover {
-    transform: scale(1.1); 
-    transition: 0.2s;
-    
-    
-}
-
 /* footer styles */
 footer {
-    background-color: #373738;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:76px;
+    align-content: center;
+    
+    height:60px;
 }
 .copyright {
     color: white;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding: 20px;
+    margin-bottom: 2px;  
 }
 footer ul { 
     display: flex;
@@ -349,77 +471,89 @@ footer ul {
     list-style-type: none;   
 }
 .footerIcons {
-    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(300deg) brightness(100%) contrast(104%);
     height: 20px
 }
 
-/* media queries */ 
-@media (max-width: 690px) {
-  header ul { font-size: 14px;}
-  h2 {font-size: 28px}
-  h1 {font-size: 32px;}
+.footerLinks {
+    padding-bottom: 4px;
+}
+.caseStudy:hover {
+    transform: scale(1.03); 
+}
 
+/* media queries */ 
+@media (max-width: 740px) {
+
+   /* for shrinking menu items at 740 viewport
+   .logo {
+        width: 44px;
+    }
+    header ul {
+         font-size: 14px;
+        } */ 
 .designIcon {
     width: 60px;
     height: 60px;
     border-radius: 8px;
 }
-}
 @media (max-width: 600px) {
-    .aboutMeImg {
+    h4 {
+       
+        margin: 16px; 
+    }
+    h1 {
+        margin-top: 10px;
+    }
+    .imgLimit {
         width: 100%;
-        margin: 5px 0px 20px 0px; 
+      
+    }
+    .caseStudyDoubleImgContainer {
+        flex-direction: column;
+    }
+    .caseStudyDoubleImg {
+        width: 100%;
+    }
+    .aboutMeImg {
+        width: 49%;
+        margin: 5px 0px 10px 16px; 
      }
+     .aboutMeImgLeft {
+        width: 49%;
+        margin: 5px 16px 10px 0px; 
+     }
+
     .navCollapse {
         display: none;
     } 
     .mobileNav { 
         display: flex; 
-        border-radius: 8px ;
-        border-color: #373738 ;
+        border-radius: 4px ;
+        border-color: #000000;
         border-style: inset;
         border-width: thin;
         margin: 0px 10px;
-        padding: 13px;
+        padding: 7px;
+        justify-content: center;
+        width: 41px;
     }
 .mainNav {
     padding: 0;
+    
 }
-    .skills {
-       display: flex;
-       flex-direction: column;
-       box-shadow: 0px 4px 8px #CECECE;
-       margin: 10px 0px 20px 0px;
-       padding: 10px 0px 10px 0px;
-       border-radius: 8px;
-} 
-    .skillsLeft {
-        box-shadow: none;
-        
-    }
-     .skillsCenter {
-        box-shadow: none;
-    }
-    .skillsRight {
-        box-shadow: none;
-    }
-    .skillsList {
-       list-style-type: none;
-       text-align: center;
-       margin: 0;
-       padding: 0;
-}
+
     .aboutMeContent {
        width: 90%;
 }
 }
-@media (max-width: 750px) {
+@media (max-width: 650px) {
+  
     .myWork {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
+      width: 100%;
      }
      .caseStudy {
         width: 90%;
@@ -429,4 +563,38 @@ footer ul {
     .skills {
         width: 90%;
     }
+    .caseStudyBody {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 900px) { 
+    
+    .skills {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 8px #CECECE;
+        margin: 10px 0px 20px 0px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 8px;
+ } 
+     .skillsLeft {
+         box-shadow: none;
+         
+     }
+     .skillsCenter {
+         box-shadow: none;
+     }
+     .skillsRight {
+         box-shadow: none;
+     }
+     .skillsList {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+ }
+ .caseStudyMedImg{
+     width: 100%
+}
 }
